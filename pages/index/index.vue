@@ -1,8 +1,17 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title">{{title}}</text>
+		<view class="header">
+			<view class="container">
+				<navigator url="/page/home/home" hover-class="navigator-hover">
+					<view class="user-info">
+						<!-- 用户头像 -->
+						<image :src="userImage" mode="" class="user-image"></image>
+						<!-- 用户姓名 -->
+						<view><text>{{userName}}</text></view>
+						<view><text>点击激活会员</text></view>
+					</view>
+				</navigator>
+			</view>
 		</view>
 	</view>
 </template>
@@ -11,11 +20,20 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				userName: '', //用户名称
+				userImage:'', //用户图片
 			}
 		},
 		onLoad() {
-
+			// 获取用户信息
+			var _this = this;
+			wx.getUserInfo({
+			  success: function(res) {
+				  console.log(res)
+			    _this.userName = res.userInfo.nickName;
+			    _this.userImage = res.userInfo.avatarUrl;
+			  }
+			})
 		},
 		methods: {
 
@@ -24,29 +42,26 @@
 </script>
 
 <style>
+	.container {
+		padding: 0 30upx;
+	}
 	.content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
+	.user-info {
+		height: 300upx;
+		margin-top: 30upx;
+		border:1px solid #ccc;
+		border-radius: 20upx 20upx 0 0;
+		background: #6d7170;
+	}
+	.user-image {
+		width: 80upx;
+		height: 80upx;
+		border-radius:50% ;
 	}
 
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
 </style>

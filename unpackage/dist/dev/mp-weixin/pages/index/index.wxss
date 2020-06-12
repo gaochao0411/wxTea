@@ -1,4 +1,8 @@
 
+.container {
+	padding: 0 30rpx;
+	position: relative;
+}
 .content {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -14,24 +18,81 @@
 	-webkit-justify-content: center;
 	        justify-content: center;
 }
-.logo {
-	height: 200rpx;
-	width: 200rpx;
-	margin-top: 200rpx;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50rpx;
+.user-info {
+	height: 300rpx;
+	margin-top: 30rpx;
+	border:1px solid #ccc;
+	border-radius: 20rpx 20rpx 0 0;
+	background: #6d7170;
+	padding: 30rpx 30rpx 0 30rpx;
 }
-.text-area {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	        justify-content: center;
+.QR-code {
+	position: absolute;
+	top: 80rpx;
+	right: 80rpx;
+	width: auto;
 }
-.title {
-	font-size: 36rpx;
-	color: #8f8f94;
+.QR-code .iconfont {
+	color: #ccc;
+	font-size: 100rpx;
+}
+.user-image {
+	width: 80rpx;
+	height: 80rpx;
+	border-radius:50% ;
+}
+.user-info .container{
+	border:1px solid #757978;
+	border-bottom: 0;
+	height: 100%;
+	padding-top: 30rpx;
+	border-radius: 20rpx 20rpx 0 0;
+}
+.member-register {
+	height: 60rpx;
+	background: #f9f9f9;
+}
+.member-register .container{
+	line-height: 60rpx;
+}
+.order .iconfont{
+	font-size: 150rpx;
+}
+.order .uni-flex-item{
+	-webkit-align-self:center;
+	        align-self:center;
+	text-align: center;
+	height: auto;
+}
+.order button{
+	height: 70rpx;
+	line-height: 70rpx;
+	width: 140rpx;
+	font-size: 30rpx;
+}
+.order .title {
+	display: block;
+}
+.order .desc {
+	font-size: 20rpx;
+	color: #999;
+}
+.activity .image-container {
+	margin: 40rpx 0;
+	width: 100%;
+	height: 320rpx;
+	border-radius: 20rpx;
+	overflow: hidden;
+}
+.activity image {
+	width: 100%;
+	border-radius: 20rpx;
+}
+.member-img {
+	width: 40rpx;
+	height: 40rpx;
+	margin-right:20rpx; 
+	vertical-align: middle;
+	margin-top: -10rpx;
 }
 

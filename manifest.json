@@ -1,5 +1,5 @@
 {
-    "name" : "wxTea",
+    "name" : "爱奶茶",
     "appid" : "__UNI__D722410",
     "description" : "",
     "versionName" : "1.0.0",
@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx907232810a701630",
         "setting" : {
             "urlCheck" : false
         },

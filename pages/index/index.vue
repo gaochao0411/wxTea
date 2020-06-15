@@ -1,9 +1,9 @@
 <template>
-	<view class="content">
+	<view class="content index">
 		<!-- 头部--卡片 -->
 		<view class="header">
 			<view class="container">
-				<navigator url="/page/home/home" hover-class="navigator-hover">
+				<navigator url="/pages/home/home" hover-class="navigator-hover">
 					<view class="user-info">
 						<view class="container">
 							<!-- 用户头像 -->
@@ -96,46 +96,11 @@
 	}
 </script>
 
-<style>
-	.container {
-		padding: 0 30upx;
-		position: relative;
-	}
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	.user-info {
-		height: 300upx;
-		margin-top: 30upx;
-		border:1px solid #ccc;
-		border-radius: 20upx 20upx 0 0;
-		background: #6d7170;
-		padding: 30upx 30upx 0 30upx;
-	}
-	.QR-code {
-		position: absolute;
-		top: 80upx;
-		right: 80upx;
-		width: auto;
-	}
-	.QR-code .iconfont {
-		color: #ccc;
-		font-size: 100rpx;
-	}
+<style scoped>
 	.user-image {
 		width: 80upx;
 		height: 80upx;
 		border-radius:50% ;
-	}
-	.user-info .container{
-		border:1px solid #757978;
-		border-bottom: 0;
-		height: 100%;
-		padding-top: 30upx;
-		border-radius: 20upx 20upx 0 0;
 	}
 	.member-register {
 		height: 60upx;

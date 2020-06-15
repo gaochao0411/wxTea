@@ -1,0 +1,64 @@
+	/*每个页面公共css */
+	view {
+		width: 100%;
+		box-sizing: border-box;
+		line-height: 1.425;
+		color: #333;
+	}
+	.container {
+		padding: 0 30upx;
+		position: relative;
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.right {
+		float: right;
+		width: auto;
+	}
+	.left {
+		float: left;
+		width: auto;
+	}
+	.clearfix::after{
+		clear: both;
+		content: '';
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+	/* 头部卡片 */
+	.header .user-info {
+		height: 300upx;
+		margin-top: 30upx;
+		border:1px solid #ccc;
+		border-radius: 20upx 20upx 0 0;
+		background: #6d7170;
+		padding: 30upx 30upx 0 30upx;
+	}
+	.header .QR-code {
+		position: absolute;
+		top: 80upx;
+		right: 80upx;
+		width: auto;
+	}
+	.header .QR-code .iconfont {
+		color: #ccc;
+		font-size: 100rpx;
+	}
+	.header .user-info .container{
+		border:1px solid #757978;
+		border-bottom: 0;
+		height: 100%;
+		padding-top: 30upx;
+		border-radius: 20upx 20upx 0 0;
+	}
+	.my-button {
+		height: 70upx;
+		line-height: 70upx;
+		width: 140upx;
+		font-size: 30upx;
+	}

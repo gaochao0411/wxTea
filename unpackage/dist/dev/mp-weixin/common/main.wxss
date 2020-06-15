@@ -1524,9 +1524,75 @@ radio-group label, checkbox-group label{
 }
 /*每个页面公共css */
 view {
-	width: 100%;
-	box-sizing: border-box;
-	line-height: 1.425;
-	color: #333;
+		width: 100%;
+		box-sizing: border-box;
+		line-height: 1.425;
+		color: #333;
+}
+.container {
+		padding: 0 30rpx;
+		position: relative;
+}
+.content {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+}
+.right {
+		float: right;
+		width: auto;
+}
+.left {
+		float: left;
+		width: auto;
+}
+.clearfix::after{
+		clear: both;
+		content: '';
+		display: block;
+		height: 0;
+		visibility: hidden;
+}
+/* 头部卡片 */
+.header .user-info {
+		height: 300rpx;
+		margin-top: 30rpx;
+		border:1px solid #ccc;
+		border-radius: 20rpx 20rpx 0 0;
+		background: #6d7170;
+		padding: 30rpx 30rpx 0 30rpx;
+}
+.header .QR-code {
+		position: absolute;
+		top: 80rpx;
+		right: 80rpx;
+		width: auto;
+}
+.header .QR-code .iconfont {
+		color: #ccc;
+		font-size: 100rpx;
+}
+.header .user-info .container{
+		border:1px solid #757978;
+		border-bottom: 0;
+		height: 100%;
+		padding-top: 30rpx;
+		border-radius: 20rpx 20rpx 0 0;
+}
+.my-button {
+		height: 70rpx;
+		line-height: 70rpx;
+		width: 140rpx;
+		font-size: 30rpx;
 }
 

@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/integralMall/integralMall",
     "pages/order/order",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/exchangeRecord/exchangeRecord"
   ],
   "subPackages": [],
   "window": {
@@ -44,6 +45,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap1.json"
+  "usingComponents": {}
 }

@@ -1524,10 +1524,13 @@ radio-group label, checkbox-group label{
 }
 /*每个页面公共css */
 view {
-		width: 100%;
+		width: auto;
 		box-sizing: border-box;
 		line-height: 1.425;
 		color: #333;
+}
+.content>view {
+		width: 100%;
 }
 .container {
 		padding: 0 30rpx;
@@ -1592,7 +1595,8 @@ view {
 .my-button {
 		height: 70rpx;
 		line-height: 70rpx;
-		width: 140rpx;
+		width: auto;
 		font-size: 30rpx;
+		display: inline-block;
 }
 

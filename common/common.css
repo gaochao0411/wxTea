@@ -1,9 +1,12 @@
 	/*每个页面公共css */
 	view {
-		width: 100%;
+		width: auto;
 		box-sizing: border-box;
 		line-height: 1.425;
 		color: #333;
+	}
+	.content>view {
+		width: 100%;
 	}
 	.container {
 		padding: 0 30upx;
@@ -59,6 +62,7 @@
 	.my-button {
 		height: 70upx;
 		line-height: 70upx;
-		width: 140upx;
+		width: auto;
 		font-size: 30upx;
+		display: inline-block;
 	}

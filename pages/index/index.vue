@@ -38,7 +38,7 @@
 					<text class="desc">选一杯喜欢的茶吧</text>
 				</view>
 				<view class="uni-flex-item">
-					<button type="mini">点 单</button>
+					<button type="mini" @click="placeOrder">点 单</button>
 				</view>
 			</view>
 		</view>
@@ -53,7 +53,7 @@
 					<text class="desc">今日饮茶</text>
 				</view>
 				<view class="uni-flex-item">
-					<button type="mini">外 卖</button>
+					<button type="mini" @click="placeOrder">外 卖</button>
 				</view>
 			</view>
 		</view>
@@ -91,7 +91,12 @@
 			})
 		},
 		methods: {
-
+			// 下单前先选择门店
+			placeOrder(){
+				uni.navigateTo({
+					url:'../selectStore/selectStore'
+				})
+			}
 		}
 	}
 </script>

@@ -37,7 +37,7 @@
 	.header .user-info {
 		height: 300upx;
 		margin-top: 30upx;
-		border:1px solid #ccc;
+		/* border:1px solid #ccc; */
 		border-radius: 20upx 20upx 0 0;
 		background: #6d7170;
 		padding: 30upx 30upx 0 30upx;

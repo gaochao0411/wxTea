@@ -28,6 +28,10 @@
             "path" : "pages/exchangeRecord/exchangeRecord",
             "style" : {}
         }
+        ,{
+            "path" : "pages/selectStore/selectStore",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

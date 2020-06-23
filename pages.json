@@ -32,6 +32,10 @@
             "path" : "pages/selectStore/selectStore",
             "style" : {}
         }
+        ,{
+            "path" : "pages/goods/goods",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
